@@ -6,7 +6,7 @@ load_dotenv()
 
 st.set_page_config(page_title="Blood Work Analyzer", layout="wide")
 
-llm = ChatGroq(model="llama-3.1-8b-instant")
+llm = ChatGroq(model="llama-3.3-70b-versatile")
 
 st.markdown("""
 <style>
@@ -84,10 +84,10 @@ You are a clinical nutritionist specializing in Indian dietary habits.
 
 Based on the blood work analysis below, provide two clearly separated sections:
 
-SECTION 1 - HEALTH SUMMARY:
+SECTION 1
 Write 4-5 lines explaining the patient's condition in simple, non-technical language.
 
-SECTION 2 - INDIAN DIET PLAN:
+SECTION 2
 List foods to eat more of and foods to avoid, using commonly available Indian foods
 like dal, sabzi, roti, rice, etc. Keep it practical and concise.
 
@@ -100,7 +100,7 @@ Blood Work Analysis:
         # Split response into two sections
         if "SECTION 2" in full_response:
             parts = full_response.split("SECTION 2")
-            health_summary = parts[0].replace("SECTION 1 - HEALTH SUMMARY:", "").replace("SECTION 1", "").strip()
+            health_summary = parts[0].replace("SECTION 1", "").replace("SECTION 1", "").strip()
             diet_plan = ("SECTION 2" + parts[1]).replace("SECTION 2 - INDIAN DIET PLAN:", "").replace("SECTION 2", "").strip()
         else:
             health_summary = full_response
