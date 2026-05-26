@@ -81,47 +81,11 @@ Blood Report:
             # Stage 2: Health summary and Indian diet plan
             diet_prompt = f"""
 You are a clinical nutritionist specializing in Indian dietary habits.
+
 Based on the blood work analysis below, provide two clearly separated sections:
 
 SECTION 1 - HEALTH SUMMARY:
-Analyze the patient's health report and generate a professional, clean medical summary.
-
-Formatting rules:
-1. Do NOT use markdown symbols such as *, **, #, -, bullet points.
-2. Do NOT add extra blank lines after headings.
-3. Keep headings on a separate line followed immediately by content.
-4. Use clear section headings in this exact order:
-
-HEALTH SUMMARY
-KEY OBSERVATIONS
-POTENTIAL CONCERNS
-RECOMMENDATIONS
-
-5. Write in concise, professional language.
-6. Use short paragraphs (2–4 sentences each).
-7. Mention both positive and negative findings in balanced form.
-8. Avoid repeating values.
-9. Do not exaggerate medical conclusions.
-10. Make the output visually clean and readable.
-
-Example format:
-
-HEALTH SUMMARY
-The patient's blood test results show several healthy indicators along with areas that need attention. Hemoglobin and hematocrit levels are within the normal range, suggesting healthy red blood cell status.
-
-KEY OBSERVATIONS
-Hemoglobin and hematocrit are within normal limits.
-White blood cell count is slightly lower than expected.
-Cholesterol, LDL, and triglycerides are elevated.
-
-POTENTIAL CONCERNS
-Low white blood cell count may indicate reduced immune response.
-Elevated cholesterol levels may increase cardiovascular risk over time.
-
-RECOMMENDATIONS
-Focus on a balanced diet and regular physical activity.
-Follow up with a healthcare professional for further evaluation if symptoms exist.
-
+Write 4-5 lines explaining the patient's condition in simple, non-technical language.
 
 SECTION 2 - INDIAN DIET PLAN:
 List foods to eat more of and foods to avoid, using commonly available Indian foods
