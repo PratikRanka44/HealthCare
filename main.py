@@ -37,7 +37,7 @@ st.title("Blood Work Analyzer")
 left_col, right_col = st.columns([1, 1])
 
 with left_col:
-    st.subheader("Blood Work Report")
+    st.subheader("🩸Blood Work Report")
     blood_report = st.text_area(
         label="Paste your report below",
         height=500,
