@@ -85,6 +85,7 @@ You are a clinical nutritionist specializing in Indian dietary habits.
 Based on the blood work analysis below, provide two clearly separated sections:
 
 SECTION 1 - HEALTH SUMMARY:
+leave one line then,
 Write 4-5 lines explaining the patient's condition in simple, non-technical language.
 
 SECTION 2 - INDIAN DIET PLAN:
